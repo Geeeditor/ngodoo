@@ -14,6 +14,11 @@ option {
   outline: 0px !important;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* line 5, ../sass/screen.scss */
 .banner-section {
   background: #000;

@@ -4,13 +4,17 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>NGODOO - Management Board </title>
+<title>NGODOO - Home Page </title>
 
 <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-<meta name="keywords" content="NGODOO, non-governmental, girl child, help, initiative NGODOO Development Initative, NGODOO Management" />
+<meta name="keywords" content="NGODOO, non-governmental, girl child, help, initiative NGODOO Development Initative, NGODOO Blog" />
 
 <meta name="description" content="Ngodoo Development Initative is a non-governmental organization aimed at helping girls and boys achieve their dreams and become the best they can ever be regardless of their background.">
 <meta name="motto" content="..buiding a healthier environment">
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
 
 <!-- Mobile view -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -281,21 +285,21 @@
                         </ul>-->
                       </li>
                       
-                      <li class="right active"> <a href="">About</a> <span class="arrow"></span>
+                      <li class="right "> <a href="">About</a> <span class="arrow"></span>
                         <ul class="dm-align-2">
                                 <li> <a href="#">About Us</a> </li>
                               <li> <a href="board.html">Management </a> </li>
                               
                         </ul>
                       </li>
-                      <li class="right"> <a href="#">Gallery</a> <span class="arrow"></span>
+                      <li class="right "> <a href="#">Gallery</a> <span class="arrow"></span>
                         <ul class="dm-align-2">
                               <li> <a href="Gallery.html">NGODOO Event Gallery</a> </li>
-                              <!-- <li> <a href="nyc-document-gallery.php">NYC Document Gallery</a> </li> -->
+                              <!-- <li> <a href="nyc-document-gallery.html">NYC Document Gallery</a> </li> -->
                         </ul>
                       </li>
                       <!-- <li class="right"><a href="donate.php">Donate</a></li> -->
-                      <li class="right"> <a href="#">News</a> <span class="arrow"></span>
+                      <li class="right active"> <a href="#">News</a> <span class="arrow"></span>
                         <ul class="dm-align-2">
                               <li> <a href="news.html">NGODOO Blog</a> </li>
                               <!-- <li> <a href="https://news.nyc.org.ng/">News Blog</a> </li> -->
@@ -329,7 +333,7 @@
     
 <style>
       .hero-bg{
-        background: linear-gradient(90deg, rgba(14,8,3,0.5) 0%, rgba(19,6,1,0.5) 49%, rgba(0,0,0,0.5) 100%), url(./images/management.jpg
+        background: linear-gradient(90deg, rgba(14,8,3,0.5) 0%, rgba(19,6,1,0.5) 49%, rgba(0,0,0,0.5) 100%), url(./images/blog-bg.jpg
         );
         /* object-fit: cover; */
         /* object-position: center; */
@@ -428,25 +432,25 @@
        <div class="hero-content" > 
     
 
-   <h3>NGODOO DEVELOPMENT INITIATIVE</h3>
-   <a class="scroll-btn" href="#board">
+   <h3>NGODOO DEVELOPMENT INITIATIVE BLOG </h3>
+   <a class="scroll-btn" href="">
     <img src="./images/mouse-circle-svgrepo-com.svg" alt="">
-    Management
+    Coming soon
    </a>
 
    </div>
      </section>
  <!-- END REVOLUTION SLIDER -->
-     <section id="board">
+     <section id="gallery">
     <div class="pagenation-holder">
       <div class="container">
         <div class="row">
-       <div class="col-md-6"> <h4>NGODOO Board</h4></div>
+       <div class="col-md-6"> <h4>NGODOO Blog</h4></div>
         <div class="col-md-6">
         <ol class="breadcrumb">
-    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Home</a></li>
  
-    <li class="current"><a href="#">Management</a></li>
+    <li class="current"><a href="/#blog">Blog</a></li>
 </ol>  
 </div>
           
@@ -497,354 +501,11 @@
   
     
     
-  <section class="board-container">
-    <style>
-.wrapper--team {
-  margin: 0;
-  padding: 2rem 1rem;
-  background-color: #E9E7D0;
-}
-
-.l-container {
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 64em) {
-  .l-container {
-   max-width: 100rem;
-  }
-}
-@media screen and (min-width: 75em) {
-  .l-container {
-            max-width: 120rem;
-    }
-  }
-
-.team-grid {
-  margin: 0;
-  text-align: center;
-  zoom: 1;
-}
-.team-grid:before, .team-grid:after {
-  content: " ";
-  display: table;
-}
-.team-grid:after {
-  clear: both;
-}
-
-.team-grid__member {
-  font-family: ff-tisa-web-pro;
-  max-width: 100%;
-  padding: 0.5rem;
-  margin: 0 0 0.5rem;
-  display: inline-block;
-  float: none;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 28em) {
-  .team-grid__member {
-    width: 49%;
-    max-width: none;
-  }
-}
-@media screen and (min-width: 42em) {
-  .team-grid__member {
-    width: 32.5%;
-  }
-}
-@media screen and (min-width: 62em) {
-  .team-grid__member {
-    width: 19.45%;
-  }
-}
-.team-grid__member {
-  position: relative;
-  overflow: hidden;
-}
-
-.team-grid__member img {
-  width: 100%;
-  height: auto;
-  border: 8px solid #fff;
-  box-sizing: border-box;
-  display: block;
-}
-
-.member__info {
-  color: #fff;
-  height: auto;
-  width: auto;
-  opacity: 0;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  background: rgba(0, 0, 0, 0.85);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.member__name {
-  color: #D9BC55;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  line-height: 1.2rem;
-  margin-bottom: 0;
-  padding: 0 12px;
-}
-
-.member__title {
-  margin-bottom: 0.75rem;
-  font-size: 0.8rem;
-  font-weight: normal;
-  line-height: 1rem;
-  padding: 0 1.5rem;
-}
-
-a.member__link {
-  background: #D68D2C;
-  color: #FFF;
-  border-radius: 2px;
-  border: 0;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.team-grid__member:hover .member__info {
-  opacity: 1;
-}
-
-.member__info:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
-}
-
-.center-vert-content {
-  display: inline-block;
-  vertical-align: middle;
-}</style>
-
-<div class="wrapper--team">
-<div class="l-container">
   
-  <div class="team-grid">
-
-    <div class="team-grid__member hover">
-      <div class="member__info">
-        <div class="center-vert-content">
-          <h3 class="member__name">Rachel Wuese Tyona</h3>
-          <p class="member__title">Executive Director</p>
-          <!-- <a class="member__link" href="javascript:void(0)">Read More</a> -->
-        </div>
-      </div>
-      <img src="./images/tyonaracheal.jpeg" alt="Tyona Rachel">
-    </div>
-    
-    <!-- <div class="team-grid__member hover">
-      <div class="member__info">
-        <div class="center-vert-content">
-          <h3 class="member__name">Randy Mosher</h3>
-          <p class="member__title">Alchemist</p>
-          <a class="member__link" href="javascript:void(0)">Read More</a>
-        </div>
-      </div>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/randy-mosher.jpg" alt="Randy Mosher">
-    </div>
-
-    <div class="team-grid__member hover">
-      <div class="member__info">
-        <div class="center-vert-content">
-          <h3 class="member__name">BJ Pichman</h3>
-          <p class="member__title">Operations Manager</p>
-          <a class="member__link" href="javascript:void(0)">Read More</a>
-        </div>
-      </div>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/mrch8596.jpg" alt="BJ Pichman">
-    </div>
-    
-    <div class="team-grid__member hover">
-      <div class="member__info">
-        <div class="center-vert-content">
-          <h3 class="member__name">Jacqueline Armanetti</h3>
-          <p class="member__title">Brand Ambassador</p>
-          <a class="member__link" href="javascript:void(0)">Read More</a>
-        </div>
-      </div>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/jacqueline-armanetti.jpg" alt="Jacqueline Armanetti">
-    </div>
-    
-    <div class="team-grid__member hover">
-      <div class="member__info">
-        <div class="center-vert-content">
-          <h3 class="member__name">Romy Seth</h3>
-          <p class="member__title">Analyst</p>
-          <a class="member__link" href="javascript:void(0)">Read More</a>
-        </div>
-      </div>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/romy-seth.jpg" alt="Romy Seth">
-    </div> -->
-    
-  </div>
-
-</div>
-</div>
-
-
-
-
-  </section>
-    
-    <div class="clearfix"></div>
-    <!--end section-->
-    
-    <section class="sec-padding">
-  <div class="container">
-  <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 nopadding">
-              <div class="ce-feature-box-13">
-              <div class="img-box">
-                <div class="overlay"></div>
-                <img src="images/tyonaracheal.jpeg" alt="" class="img-responsive"/> </div></div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 nopadding">
-              <div class="ce-feature-box-11 margin-bottom">
-                <div class="text-box min-hei-2">
-                  <div class="text-box-inner border"><div class="col-sm-12 nopadding">
-                    <div class="sec-title-container less-padding-4 text-left">
-                      <h5 class="font-weight-4 less-mar-1 line-height-4 text-primary opacity-9">From </h5>
-                      <h2 class="font-weight-6 less-mar-1 line-height-5">The desk of the Executive Director </h2>
-                      <div class="ce-title-line align-left"></div>
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                  <!--end title-->
-                  
-                  <div class="form-body bg-light">
-                  
-                    <h6>Fun Fact: In Tiv language, ‘Ngodoo’ means ‘mother is good’. A good mother will always ensure the total well-being of her child(ren) no matter the circumstances.</h6>
-
-                    <p style="display:flex; gap: 5px; flex-direction: column; line-height: 2;">
-                      <span>
-                        A warm welcome to our digital home! 
-                      </span>
-
-                      <span>
-As the Executive Director of Ngodoo Development Initiative, I feel honored to lead an organization dedicated to ensuring the growth and development of the society, creating sustainable environment and positively transforming the total lives of youth and women. 
-                      </span>
-                 <span>Through our website, you get to explore and see first hand the impactful  work we do, the communities we serve and the transformative projects we undertake. </span>
-<span>
-Here, you will find comprehensive information about our programs, initiatives, and how you can get involved.
-I invite you to navigate through our pages, learn about our mission, and discover the thousands ways you can join us in making a difference. Together, we can create positive change and build a brighter future for all.
-Thank you for visiting, and we look forward to connecting with you on this journey of impact and empowerment.
-</span>
-
-
-                    </p>
-
-                    <p>Warm Regards</p>
-                    <p>Rachel Wuese Tyona,<br>
-Executive Director</p>
-                  </div></div>
-                </div>
-              </div>
-            </div>
-            <!--end item--> 
-            
-          </div>
-  </div>
-  </section>
-<div class="clearfix"></div>
   <!-- end section -->
   
     
-    <!--<div class="parallax vertical-align" data-parallax-bg-image="images/parallax/5.jpg" data-parallax-speed="0.9" data-parallax-direction="down">
-   <div class="parallax-overlay">
-          <div class="container-fluid sec-tpadding-2 sec-bpadding-2">
-          <div class="row">
-
-          <div class="col-md-10 col-centered">
-          <div class="col-md-3 col-sm-12 col-xs-12">
-            <div class="ce-feature-box-21 margin-bottom">
-              <p class="small-text">22 August 2019</p>
-              <h5 class="font-weight-5 title">Praesent mattis commodo augue</h5>
-              <p class="content">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
-              <br/>
-              <div class="divider-line solid light"></div>
-              <br/>
-              <div class="imgbox-xtiny left round overflow-hidden"><img src="images/17.jpg" alt="" class="img-responsive"/></div>
-              <div class="text-box-right less-padding author">Matthew</div>
-            </div>
-          </div>
-          <!-end item->
-          
-          <div class="col-md-3 col-sm-12 col-xs-12">
-            <div class="ce-feature-box-21 active margin-bottom">
-              <p class="small-text">22 August 2019</p>
-              <h5 class="font-weight-5 title">Vestibulum ante ipsum primis</h5>
-              <p class="content">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
-              <br/>
-              <div class="divider-line solid light"></div>
-              <br/>
-              <div class="imgbox-xtiny left round overflow-hidden"><img src="images/19.jpg" alt="" class="img-responsive"/></div>
-              <div class="text-box-right less-padding author">Margaret</div>
-            </div>
-          </div>
-          <!-end item->
-          
-          <div class="col-md-3 col-sm-12 col-xs-12">
-            <div class="ce-feature-box-21 margin-bottom">
-              <p class="small-text">22 August 2019</p>
-              <h5 class="font-weight-5 title">Donec libero purus pulvinar ac congue</h5>
-              <p class="content">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
-              <br/>
-              <div class="divider-line solid light"></div>
-              <br/>
-              <div class="imgbox-xtiny left round overflow-hidden"><img src="images/18.jpg" alt="" class="img-responsive"/></div>
-              <div class="text-box-right less-padding author">Benjamin</div>
-            </div>
-          </div>
-          <!-end item->
-          
-          <div class="col-md-3 col-sm-12 col-xs-12">
-            <div class="ce-feature-box-21 margin-bottom">
-              <p class="small-text">22 August 2019</p>
-              <h5 class="font-weight-5 title">Morbi euismod nulla aliquet felis Sed</h5>
-              <p class="content">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
-              <br/>
-              <div class="divider-line solid light"></div>
-              <br/>
-              <div class="imgbox-xtiny left round overflow-hidden"><img src="images/4.jpg" alt="" class="img-responsive"/></div>
-              <div class="text-box-right less-padding author">Jennifer</div>
-            </div>
-          </div>
-          <!-end item-> 
-          
-
-          </div>
-          
-        </div>
-      </div>
-        </div>
-    
-</div>
-<div class="clearfix"></div>
-    <!- end section -->
-    
-  
-    
+   
     
 
     
@@ -1150,6 +811,7 @@ itemTemplate:
 <script src="js/progress-circle/raphael-min.js"></script> 
 <script src="js/progress-circle/custom.js"></script> 
 <script src="js/progress-circle/jQuery.circleProgressBar.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script src="js/functions/functions.js"></script>
 </body>
 
