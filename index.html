@@ -5,6 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>NGODOO - Home Page </title>
+    <link rel="stylesheet" href="splide-dist/css/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+
 
 <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 <meta name="keywords" content="NGODOO, non-governmental, girl child, help, initiative NGODOO Development Initative, Youth, Adult, Orhpanage, Happy, Family, Team" />
@@ -64,14 +70,14 @@
 </head>
 
 <body>
-<div class="over-loader loader-live">
-  <div class="loader">
-    <div class="loader-item style4">
-      <div class="cube1"></div>
-      <div class="cube2"></div>
-    </div>
-  </div>
-</div>
+<!--<div class="over-loader loader-live">-->
+<!--  <div class="loader">-->
+<!--    <div class="loader-item style4">-->
+<!--      <div class="cube1"></div>-->
+<!--      <div class="cube2"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 <!--end loading--> 
 
 <!-- Style Customizer -->
@@ -327,7 +333,7 @@
     
 <style>
       .hero-bg{
-        background: linear-gradient(90deg, rgba(14,8,3,0.5) 0%, rgba(19,6,1,0.5) 49%, rgba(0,0,0,0.5) 100%), url(./images/ezgif-3-10f12dc57a.gif
+        background: linear-gradient(90deg, rgba(14,8,3,0.5) 0%, rgba(19,6,1,0.5) 49%, rgba(0,0,0,0.5) 100%), url(./images/sliders/_DSC0454.webp
         );
         /* object-fit: cover; */
         /* object-position: center; */
@@ -341,10 +347,22 @@
 
       }
 
+.hero-content{
+         position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+      
 
    @media screen and (max-width: 500px) {
   .hero-bg {
-    background-image: url(./images/ezgif-3-10f12dc57a1.gif) !important;
+    background-image:linear-gradient(90deg, rgba(14,8,3,0.5) 0%, rgba(19,6,1,0.5) 49%, rgba(0,0,0,0.5) 100%), url(./images/sliders/_DSC0454.webp) !important;
     /* object-fit: cover; */
     /* object-position: center; */
     background-repeat: no-repeat;
@@ -359,7 +377,7 @@
 
   .hero-content {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -387,55 +405,353 @@
 
       
 
-      .hero-content{
-      position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-    padding: 0 10rem;
-      }
+      
 
       .hero-content > h3 {
         font-weight: 900;
         color: white;
         margin: auto;
-    font-size: 45px;
+    font-size: 55px;
     padding-bottom: 30px;
     line-height: normal;
+    text-align: center;
       }
 
       .scroll-btn {
         color: white;
-        font-size: 20px;
+        font-size: 15px;
+        font-weight: 600;
         cursor: alias;
             position: relative;
     cursor: alias;
     z-index: 999 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    text-transform: uppercase;
+    margin-top: -15px;
+    border-top:white 1px solid ;
+    padding-top: 10px;
+    margin-top: 5px;
       }
 
       .hero-content > a >img {
-    margin-right: 10px;
+        transition: ease-in-out 500ms ;
+    /* margin-right: 10px; */
+}
+
+.hero-content > a >img:hover{
+  transform: scale(1.1);
 }
 .scroll-btn:hover {
-  font-weight: 900;
+  font-weight: 700;
   color: white;
+  transform: scale(1.05);
 }
     </style>
      <section class=" hero-bg">
        <div class="hero-content" > 
     
 
-   <h3>NGODOO DEVELOPMENT INITIATIVE</h3>
-   <a class="scroll-btn" href="#know-us">
-    <img src="./images/mouse-circle-svgrepo-com.svg" alt="">
-    Get to know us
+   <h3> WELCOME TO NGODOO DEVELOPMENT INITIATIVE</h3>
+   <a class="scroll-btn" href="about.html">
+   
+    Get to know us <img style="margin-top: 10px;" src="./images/mouse-circle-svgrepo-com.svg" alt="btn">
    </a>
 
    </div>
+
+      <section
+
+    
+  id="thumbnail-carousel"
+  class="splide"
+  aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+>
+
+<style>
+  .splide__slide a img {
+     width: 83px;
+    height: 80px;
+    border-radius: 48%;
+    object-fit: cover;
+
+}
+
+#thumbnail-carousel{
+      position: relative;
+    /* margin-top: -177px; */
+    top: 55vh;
+    width: 80%;
+  margin: auto;
+  }
+
+@media screen and(max-width:600px) {
+
+  #thumbnail-carousel{
+margin-top: -145px !important;
+  }
+
+  
+  
+}
+</style>
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0239.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0239.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0242.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0242.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0252.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0252.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0266.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0266.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0274.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0274.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0277.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0277.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0325.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0325.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0329.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0329.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0364.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0364.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0375.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0375.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0376.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0376.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0431.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0431.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0435.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0435.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+		
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0454.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0454.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0503.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0503.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+			<li class="splide__slide">
+				
+          <a
+          href="/images/sliders/_DSC0547.webp"
+         
+          class="gallery-item"
+        >
+          <img
+            src="/images/sliders/_DSC0547.webp"
+             data-toggle="lightbox"
+          data-gallery="gallery"
+            class="img-fluid rounded"
+          />
+        </a>
+			</li>
+		
+			
+		</ul>
+  </div>
+</section>
      </section>
+
+  
   
     <!-- END REVOLUTION SLIDER -->
+
+    
 
 
     
@@ -463,7 +779,7 @@ padding-bottom: 36px;
                 
               }
             </style>
-            <h2 id="know-us" class="aim less-mar-1 font-weight-3 text-white">We envision a world where the lives of youth and women (girl child) around the world are positively transformed.</h2>
+            <h2 id="know-us" class="aim less-mar-1 font-weight-3 text-white">We envision a world where the lives of youth and women around the world are positively transformed.</h2>
             <div class="clearfix"></div>
             <br/>
               &nbsp;&nbsp; <a class="btn btn-border white btn-round uppercase" href="coming.html"><i class="fa fa-play-circle" aria-hidden="true"></i> Send us a mail</a> 
@@ -481,10 +797,10 @@ padding-bottom: 36px;
         <div class="row">
           <div class="col-md-4">
             <div class="ce-feature-box-19">
-              <div class="icon-plain-medium center icon"><span class="pe-7s-drop"></span></div>
+              <!-- <div class="icon-plain-medium center icon"><span class="pe-7s-drop"></span></div> -->
               <br/>
-              <h5 class="title font-weight-5">Vision and Objectives</h5>
-              <p class="content">To engage both the public and private sector to combat health challenges especially. Create awareness about the relevance of healthy environment and routine check-ups in our communities.</p>
+              <h5 class="title font-weight-5">Vision</h5>
+              <p class="content">We envision a world where the lives of women, children, and youth around the world are positively transformed for a sustainable future.</p>
               <div class="clearfix"></div>
               <br/>
               <a class="read-more uppercase" href="#"><i class="fa fa-angle-right"></i> &nbsp; Read more</a> </div>
@@ -493,7 +809,7 @@ padding-bottom: 36px;
           
           <div class="col-md-4">
             <div class="ce-feature-box-19 primary">
-              <div class="icon-plain-medium center icon"><span class="pe-7s-switch"></span></div>
+              <!-- <div class="icon-plain-medium center icon"><span class="pe-7s-switch"></span></div> -->
               <br/>
               <h5 class="title font-weight-5">Mission Statement</h5>
               <p class="content">To ensure that the rights of the youth and the girl child is respected through sustainable socio-political, economical and environmental developement</p>
@@ -505,10 +821,10 @@ padding-bottom: 36px;
           
           <div class="col-md-4">
             <div class="ce-feature-box-19">
-              <div class="icon-plain-medium center icon"><span class="pe-7s-mouse"></span></div>
+              <!-- <div class="icon-plain-medium center icon"><span class="pe-7s-mouse"></span></div> -->
               <br/>
               <h5 class="title font-weight-5">Aim</h5>
-              <p class="content">We envision a world where the lives of youth and women (girl child) around the world are positively transformed.</p>
+              <p class="content">We aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development.</p>
               <div class="clearfix"></div>
               <br/>
               <a class="read-more uppercase" href="#"><i class="fa fa-angle-right"></i> &nbsp; Read more</a> </div>
@@ -536,7 +852,7 @@ padding-bottom: 36px;
                   <div class="col-sm-12 nopadding">
                     <div class="sec-title-container less-padding-3 text-left">
                       <h5 class="font-weight-4 less-mar-1 line-height-4 text-primary montserrat">Welcome to NGODOO Development Initiative</h5>
-                      <h2 class="font-weight-6 less-mar-1 montserrat text-white line-height-4">About US<br/>
+                      <h2 class="font-weight-6 less-mar-1 montserrat text-white line-height-4">Who we are<br/>
                         
                     </div>
                   </div>
@@ -544,7 +860,7 @@ padding-bottom: 36px;
                   <!--end title-->
                   
                   <!--<h4 class="text-white">Lorem Ipsum is simply dummy text of theprinting and typesetting it sit has</h4>-->
-                  <p class="text-white">Ngodoo Development Initiative (Registered with Corporate Affairs Commission with Registration Number 177901) is a Non-Governmental Organization aimed at helping girls and women boys achleve their dreams and become the best they can ever be regardless of their background. We believe every woman is a valuable asset, not a liability and if given the right opportunities, they can become the best in anything they do</p>
+                  <p class="text-white">At Ngodoo Development Initiative, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environment, Gender inclusion, Human Health, Good Governance and Gender Inclusion.</p>
 
                    
                   <br/>
@@ -755,31 +1071,31 @@ padding-bottom: 36px;
 
      <section class=" sec-padding section-light section-bgimg-14">
       <div class="container">
-        <div class="row">
+        <div style="margin: auto;" class="row">
             <div class="col-sm-12">
             <div class="sec-title-container text-center">
               <h5 class="font-weight-4 less-mar-1 line-height-4 text-primary opacity-9">Meet Our Team</h5>
               <h2 class="font-weight-6 less-mar-1 line-height-5">Professional Expertises</h2>
               <div class="ce-title-line"></div>
-              <h6 class="ce-sub-text raleway opacity-7">The positive distinction within the World Inspiring of Success and Connections of People and Organizations.</h6>
+              <h6 class="ce-sub-text raleway opacity-7">Meet the passionate individuals who make our goals possible.</h6>
             </div>
           </div>
           
           
            <div class="col-md-4 col-sm-6">
             <div class="ce-feature-box-47 primary two margin-bottom">
-             <div class="team-member"><a href="national.html"><img src="images/logo/logo.jpeg" alt="" class="img-responsive"/></a></div>
+             <div class="team-member"><a href="board.html"><img src="images/tyonaracheal.jpeg" alt="" class="img-responsive"/></a></div>
                <div class="info-box text-center">
-                <h5 class="less-mar-2 title">John John</h5>
-                <span class="sub-title">President</span> <br/>
+                <h5 class="less-mar-2 title">Rachel Wuese Tyona</h5>
+                <span class="sub-title">Founder/Executive Director</span> <br/>
                 <br/>
-                <p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et Praesent Lorem ipsum dolor sit amet</p>
+                <a href="board.html">More</a>
               </div>
             </div>
           </div>
          <!--  end item -->
 
-         <div class="col-md-4 col-sm-6">
+         <!-- <div class="col-md-4 col-sm-6">
             <div class="ce-feature-box-47 primary two margin-bottom">
              <div class="team-member"><a href="national.html"><img src="images/logo/logo.jpeg" alt="" class="img-responsive"/></a></div>
                <div class="info-box text-center">
@@ -789,10 +1105,10 @@ padding-bottom: 36px;
                 <p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et Praesent Lorem ipsum dolor sit amet</p>
               </div>
             </div>
-          </div>
+          </div> -->
          <!--  end item -->
 
-         <div class="col-md-4 col-sm-6">
+         <!-- <div class="col-md-4 col-sm-6">
             <div class="ce-feature-box-47 primary two margin-bottom">
              <div class="team-member"><a href="national.html"><img src="images/logo/logo.jpeg" alt="" class="img-responsive"/></a></div>
                <div class="info-box text-center">
@@ -802,7 +1118,7 @@ padding-bottom: 36px;
                 <p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo et Praesent Lorem ipsum dolor sit amet</p>
               </div>
             </div>
-          </div>
+          </div> -->
          <!--  end item -->
           
         </div>
@@ -1192,19 +1508,33 @@ for your Business and Get unlimited Features and many more Features</h2>
     
 
     
-    <div class="section-dark sec-padding">
+  
+    <div class="clearfix"></div>    <!-- end section --> 
+    
+    <a href="#" class="scrollup"><i class="fa fa-angle-up" aria-hidden="true"></i></a><!-- end scroll to top of the page--> 
+    
+  </div>
+  <!--end site wrapper--> 
+</div>
+<!--end wrapper boxed--> 
+
+<!-- Footer Section -->
+
+  <!-- Site footer -->
+      <div class="section-dark sec-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-12 colmargin clearfix margin-bottom">
             <div class="fo-map">
-              <div class="footer-logo"><img height="80" src="images/ccc.png" alt=""/></div>
-              <p class="text-light">Ngodoo Development Initiative (Registered with Corporate Affairs Commission with Registration Number 177901) is a Non-Governmental Organization aimed at helping the girl child, women and childres achleve their dreams and become the best they can ever be regardless of their background. We believe every woman is a valuable asset, not a liability and if given the right opportunities, they can become the best in anything they do.  <a href="about.html"><span>Readmore>>> </span></a></p>
+              <!-- <div class="footer-logo"><img height="80" src="images/ccc.png" alt=""/></div> -->
+              <h4 class="text-white less-mar3 font-weight-5">Ngodoo Development Initiative</h4>
+              <p class="text-light">At Ngodoo Development Initiative, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environment, Gender inclusion, Human Health, Good Governance and Gender Inclusion </p>
             </div>
           </div>
-        
+          <!--end item-->
           
           <div class="col-md-3 col-xs-12 clearfix margin-bottom">
-            <h4 class="text-white less-mar3 font-weight-5">About Us</h4>
+            <!-- <h4 class="text-white less-mar3 font-weight-5">About Us</h4>
             <div class="clearfix"></div>
             <br/>
             <ul class="footer-quick-links-4 white">
@@ -1212,7 +1542,7 @@ for your Business and Get unlimited Features and many more Features</h2>
               <li><a href="#"><i class="fa fa-angle-right"></i> Aims and Objective</a></li>
               <li><a href="#"><i class="fa fa-angle-right"></i> Vision and Mission </a></li>
               <li><a href="#"><i class="fa fa-angle-right"></i>affiliations</a></li>
-            </ul>
+            </ul> -->
           </div>
           <!--end item-->
           
@@ -1238,9 +1568,13 @@ for your Business and Get unlimited Features and many more Features</h2>
             <strong class="text-white">Address:</strong> <br>
            No. 83, Benue Crescent, Wadata, Makurdi, Benue State-Nigeria.
             </address>
+            <strong class="text-white">Address II:</strong> <br>
+            <address class="text-light">
+          NO. 9, William F. Kumuyi Street Gwarimpa Abuja, Nigeria.
+            </address>
             <span class="text-light"><strong class="text-white">Phone:</strong> +234 817 269 7966</span><br>
             <span class="text-light"><strong class="text-white">Phone:</strong> +234 708 963 0512</span><br>
-            <span class="text-light"><strong class="text-white">Email:</strong> ngodooinitiative@gmail.com</span><br>
+            <span class="text-light"><strong class="text-white">Email:</strong> info@ngodoodevelopment.com</span><br>
             <ul class="footer-social-icons white left-align icons-plain text-center">
               <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
               <li><a href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a></li>
@@ -1260,18 +1594,10 @@ for your Business and Get unlimited Features and many more Features</h2>
     <section class="sec-padding-6 section-medium-dark">
       <div class="container">
         <div class="row">
-          <div class="fo-copyright-holder text-center"> Copyright © 2024 <a href="index.html">NGDOO INITIATIVE</a> | All rights reserved. </div>
+          <div class="fo-copyright-holder text-center"> Copyright © 2024 <a href="index.html">NGODOO INITIATIVE</a> | All rights reserved. </div>
         </div>
       </div>
     </section>
-    <div class="clearfix"></div>    <!-- end section --> 
-    
-    <a href="#" class="scrollup"><i class="fa fa-angle-up" aria-hidden="true"></i></a><!-- end scroll to top of the page--> 
-    
-  </div>
-  <!--end site wrapper--> 
-</div>
-<!--end wrapper boxed--> 
 
 <!-- Scripts --> 
 
@@ -1465,6 +1791,8 @@ The following part can be removed on Server for On Demand Loading) -->
 
   </script> 
 <script src="js/parallax/parallax-background.min.js"></script> 
+   <script src="splide-dist/js/splide.min.js"></script>
+   <script src="splide-dist/js/splide-init.js"></script>
 <script>
   (function ($) {
     $('.parallax').parallaxBackground();

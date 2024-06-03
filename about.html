@@ -402,7 +402,7 @@
         color: white;
         margin: auto;
     font-size: 45px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     line-height: normal;
       }
 
@@ -413,6 +413,7 @@
             position: relative;
     cursor: alias;
     z-index: 999 !important;
+
       }
 
       .hero-content > a >img {
@@ -422,6 +423,12 @@
   font-weight: 900;
   color: white;
 }
+
+
+.hero-txt{
+  color: white;
+  font-weight: 200;
+}
     </style>
      <section class=" hero-bg">
        <div class="hero-content" > 
@@ -429,15 +436,17 @@
 
    <h3>NGODOO DEVELOPMENT INITIATIVE</h3>
    <a class="scroll-btn" href="#about">
+   <p class="hero-txt">Fun Fact: In Tiv, ‘Ngodoo’ means ‘mother is good’.</p>
+
     <img src="./images/mouse-circle-svgrepo-com.svg" alt="">
-    About Us
+    More About Us
    </a>
 
    </div>
      </section>
  <!-- END REVOLUTION SLIDER -->
      <section>
-    <div id="contact" class="pagenation-holder">
+    <div id="about" class="pagenation-holder">
       <div class="container">
         <div class="row">
        <div class="col-md-6"> <h4>About Us</h4></div>
@@ -472,12 +481,12 @@
                     <!--end title-->
 
          
-          <p align="justify">Ngodoo Development Initiative (Registered with Corporate Affairs Commission with Registration Number 177901) is a Non-Governmental Organization aimed at helping girls and women boys achleve their dreams and become the best they can ever be regardless of their background. We believe every woman is a valuable asset, not a liability and if given the right opportunities, they can become the best in anything they do.</p>
+          <p align="justify">At Ngodoo Development Initiative, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environmental sustainability, Gender inclusion, Human Health, and Good Governance.</p>
 
 
-<p align="justify">We envision a world where the lives of youth and women (girl child) around the world are positively transformed.</p>
+<p align="justify">As an organization that prioritizes the positive transformation of the lives of women, youth, and marginalized communities, we are strategically positioned in a location that enables us to understand unique challenges faced by local communities and organize sensitization campaigns on critical issues at the grassroots level. We have a track record of positively impacting the life of the children through our annual Girltech program and school support tour, our periodic workshops on women empowerment and leadership as well as partnering with other organizations to organize youth-led climate action and awareness campaigns in Nigeria. We collaborate with local communities, partner with like-minded organizations, and harness the power of innovation to drive positive change. </p>
 
-<p align="justify">Our Mission is to ensure that the rights of the youths and the girl child is respected through sustainable socio-political, economical and environmental development.</p>
+<p style="font-weight: 700;" align="justify">Navigate through our pages, learn about our mission, and discover the thousands of ways you can join us in making a difference. Together, we can create positive change and build a sustainable future for all.</p>
 
 <p align="justify">
  <h4 class="font-weight-4 less-mar-1 line-height-4 text-primary bg-opacity-8"> Our core values are;</h4>
@@ -507,7 +516,7 @@
   <div class="row">
   
   <div class="col-md-9 col-centered text-center">
-          <h4 class="text-dark font-weight-8 raleway font-color-red">NGODOO WATCH WORD</h4><p>...building a healthier environment</p>
+          <h4 class="text-dark font-weight-8 raleway font-color-red">NGODOO WATCH WORD</h4><p>...building a sustainable future</p>
         </div>
 
   </div>
@@ -578,53 +587,181 @@
                         </p>
                       </div>
                     </div>
-                    <!-- Section 2 -->
-                    <div class="accordion_in style7 act-light ">
-                      <div class="acc_head text-dark font-weight-5">
-                        <div class="acc_icon_expand"></div>
-                      Guiding Principles</div>
-                      <div class="acc_content no-lpadd">
-                        <p>
-                          <ol>
-                            <li>Use of Indigenous knowledge</li>
-                            <li>Making efforts to achieve highest quality standards</li>
-                            <li>Promoting a culture of innovation and creativity</li>
-                            <li>Meeting deadlines</li>
-                            <li>Networking and coordination</li>
-                          </ol>
-                        </p>
-                      </div>
-                    </div>
+                    
+                    
                     <div class="accordion_in style7 act-light ">
                       <div class="acc_head text-dark font-weight-5">
                         <div class="acc_icon_expand"></div>
                       Thematic Areas of Focus</div>
                       <div class="acc_content no-lpadd">
                         <p>
-                          <ol>
-                            <li>Education</li>
-                            <li>Health</li>
-                            <li>Gender</li>
-                            <li>Environment</li>
-                            <li>Governance</li>
-                          </ol>
+                          <!-- <style>
+    .dropdown-content {
+      display: none;
+    }
+  </style>  -->
+
+<ol id="myList">
+    <li><div><span>Education</span> <span>+</span></div></li>
+    <li><div><span>Health</span> <span>+</span></div></li>
+    <li><div><span>Gender</span> <span>+</span></div></li>
+    <li><div><span>Environment</span> <span>+</span></div></li>
+    <li><div><span>Governance</span> <span>+</span></div></li>
+  </ol>
+
+  <script>
+ var listItems = document.querySelectorAll("#myList li");
+
+ 
+
+    listItems.forEach(function(listItem, index) {
+      var dropdownContent = document.createElement("div");
+      dropdownContent.classList.add("dropdown-content");
+
+        dropdownContent.style.display = "none";
+
+
+      var dropdownOptions = getDropdownOptions(index);
+
+      dropdownOptions.forEach(function(option) {
+        var optionLink = document.createElement("a");
+        optionLink.href = "#";
+        optionLink.textContent = option;
+        dropdownContent.appendChild(optionLink);
+      });
+
+      listItem.appendChild(dropdownContent);
+
+      if (index === 0) {
+        dropdownContent.style.display = "block";
+      }
+
+      listItem.addEventListener("click", function() {
+        var dropdowns = document.querySelectorAll(".dropdown-content");
+        
+        dropdowns.forEach(function(dropdown) {
+          if (dropdown !== dropdownContent) {
+            dropdown.style.display = "none";
+          }
+        });
+
+        dropdownContent.style.display = (dropdownContent.style.display === "none") ? "block" : "none";
+      });
+    });
+
+    function getDropdownOptions(index) {
+      var options = [];
+
+      switch (index) {
+        case 0:
+          options = ["Option 1 for Education", "Option 2 for Education", "Option 3 for Education"];
+          break;
+        case 1:
+          options = ["Option 1 for Health", "Option 2 for Health", "Option 3 for Health"];
+          break;
+        case 2:
+          options = ["Option 1 for Gender", "Option 2 for Gender", "Option 3 for Gender"];
+          break;
+        case 3:
+          options = ["Option 1 for Environment", "Option 2 for Environment", "Option 3 for Environment"];
+          break;
+        case 4:
+          options = ["Option 1 for Governance", "Option 2 for Governance", "Option 3 for Governance"];
+          break;
+        default:
+          break;
+      }
+
+      return options;
+    }
+    </script>
                         </p>
                       </div>
                     </div>
                     <div class="accordion_in style7 act-light ">
                       <div class="acc_head text-dark font-weight-5">
-                        <div class="acc_icon_expand"></div>
+                        <div  class="acc_icon_expand"></div>
                       Program Strategies</div>
                       <div class="acc_content no-lpadd">
                         <p>
-                          <ol>
-                            <li>Advocacy</li>
-                            <li>Research and Documentation</li>
-                            <li>Service delivery through Networking </li>
-                            <li>Human Rights Education and Capacity developement/Consultancy services</li>
-                            <li>Story telling</li>
-                            <li>Civic engagement</li>
+                          <ol id="myList1">
+                            <li > <div><span>Advocacy</span> <span>+</span></div></li>
+                            <li><div><span>Research and Documentation</span> <span>+</span></div> </li>
+                            <li><div><span>Service delivery through Networking</span> <span>+</span></div>  </li>
+                            <li><div><span>Human Rights Education and Capacity developement/Consultancy services</span> <span>+</span></div> </li>
+                            <li><div><span> Story telling</span> <span>+</span></div></li>
+                            <li><div><span>Civic engagement</span> <span>+</span></div> </li>
                           </ol>
+
+                          <script>
+ var listItems = document.querySelectorAll("#myList1 li");
+
+ 
+
+    listItems.forEach(function(listItem, index) {
+      var dropdownContent = document.createElement("div");
+      dropdownContent.classList.add("dropdown-content");
+
+        dropdownContent.style.display = "none";
+
+
+      var dropdownOptions = getDropdownOptions(index);
+
+      dropdownOptions.forEach(function(option) {
+        var optionLink = document.createElement("p");
+        // optionLink.href = "#";
+        optionLink.textContent = option;
+        dropdownContent.appendChild(optionLink);
+      });
+
+      listItem.appendChild(dropdownContent);
+
+      if (index === 0) {
+        dropdownContent.style.display = "block";
+      }
+
+      listItem.addEventListener("click", function() {
+        var dropdowns = document.querySelectorAll(".dropdown-content");
+        
+        dropdowns.forEach(function(dropdown) {
+          if (dropdown !== dropdownContent) {
+            dropdown.style.display = "none";
+          }
+        });
+
+        dropdownContent.style.display = (dropdownContent.style.display === "none") ? "block" : "none";
+      });
+    });
+
+    function getDropdownOptions(index) {
+      var options = [];
+
+      switch (index) {
+        case 0:
+          options = ["Ngodoo Development Initiative actively advocates and encourages advocacy for policies and initiatives that promote the rights and welfare of women, the girl child, youth, and people living with disabilities. Through partnerships and engagement with stakeholders, policymakers, and the general public, we work towards participating and positively influencing decision-making processes and raising awareness about pertinent issues affecting these groups."];
+          break;
+        case 1:
+          options = ["At Ngodoo Development Initiative, we do not just conclude the challenges and experiences of our beneficiaries, we engage in various research processes and undertake proper documentation to generate data and valuable insights on the experiences and challenges of women, the girl child, and people living with disabilities."];
+          break;
+        case 2:
+          options = ["We leverage our strategic partnerships and networks with affiliated organizations, government agencies, and other stakeholders to deliver essential services to our beneficiaries. Through collaboration, we optimize resources, enhance knowledge sharing, and amplify the overall impact of interventions."];
+          break;
+        case 3:
+          options = ["We offer consultancy services to both public and private sector entities, leveraging our expertise in thematic areas to inform policies, programs, and practices that promote the well-being of women, children, and people living with disabilities. Thereby generating valuable resources for the organization and broadening the organization’s influence and reach."];
+          break;
+        case 4:
+          options = ["Our organization recognizes that the performance of our thematic areas would only be somewhat conclusive with engaging in and enhancing the civic engagement of our beneficiaries. Ngodoo Development Initiative encourages the active participation of our beneficiaries in social, political, and developmental processes. Through This approach, we empower individuals and strengthen a representative government, promoting a more inclusive and equitable society."];
+          break;
+        case 5:
+          options = ["Storytelling is a powerful tool for documenting human experiences, we understand the need to employ storytelling to document and humanize the experiences, challenges, and aspirations of our beneficiaries. By leveraging this tool, we raise awareness, foster empathy among spectators, amplify the voices of our beneficiaries, inspire positive action, and ensure transparency and accountability of the organization’s actions."];
+          break;
+        default:
+          break;
+      }
+
+      return options;
+    }
+    </script>
                         </p>
                       </div>
                     </div>
@@ -1008,14 +1145,15 @@ for your Business and Get unlimited Features and many more Features</h2>
         <div class="row">
           <div class="col-md-3 col-sm-12 colmargin clearfix margin-bottom">
             <div class="fo-map">
-              <div class="footer-logo"><img height="80" src="images/ccc.png" alt=""/></div>
-              <p class="text-light">Ngodoo Development Initiative (Registered with Corporate Affairs Commission with Registration Number 177901) is a Non-Governmental Organization aimed at helping the girl child, women and childres achleve their dreams and become the best they can ever be regardless of their background. We believe every woman is a valuable asset, not a liability and if given the right opportunities, they can become the best in anything they do.  <a href="about.html"><span>Readmore>>> </span></a></p>
+              <!-- <div class="footer-logo"><img height="80" src="images/ccc.png" alt=""/></div> -->
+              <h4 class="text-white less-mar3 font-weight-5">Ngodoo Development Initiative</h4>
+              <p class="text-light">At Ngodoo Development Initiative, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environment, Gender inclusion, Human Health, Good Governance and Gender Inclusion </p>
             </div>
           </div>
           <!--end item-->
           
           <div class="col-md-3 col-xs-12 clearfix margin-bottom">
-            <h4 class="text-white less-mar3 font-weight-5">About Us</h4>
+            <!-- <h4 class="text-white less-mar3 font-weight-5">About Us</h4>
             <div class="clearfix"></div>
             <br/>
             <ul class="footer-quick-links-4 white">
@@ -1023,7 +1161,7 @@ for your Business and Get unlimited Features and many more Features</h2>
               <li><a href="#"><i class="fa fa-angle-right"></i> Aims and Objective</a></li>
               <li><a href="#"><i class="fa fa-angle-right"></i> Vision and Mission </a></li>
               <li><a href="#"><i class="fa fa-angle-right"></i>affiliations</a></li>
-            </ul>
+            </ul> -->
           </div>
           <!--end item-->
           
@@ -1049,9 +1187,13 @@ for your Business and Get unlimited Features and many more Features</h2>
             <strong class="text-white">Address:</strong> <br>
            No. 83, Benue Crescent, Wadata, Makurdi, Benue State-Nigeria.
             </address>
+            <strong class="text-white">Address II:</strong> <br>
+            <address class="text-light">
+          NO. 9, William F. Kumuyi Street Gwarimpa Abuja, Nigeria.
+            </address>
             <span class="text-light"><strong class="text-white">Phone:</strong> +234 817 269 7966</span><br>
             <span class="text-light"><strong class="text-white">Phone:</strong> +234 708 963 0512</span><br>
-            <span class="text-light"><strong class="text-white">Email:</strong> ngodooinitiative@gmail.com</span><br>
+            <span class="text-light"><strong class="text-white">Email:</strong> info@ngodoodevelopment.com</span><br>
             <ul class="footer-social-icons white left-align icons-plain text-center">
               <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
               <li><a href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a></li>
@@ -1071,7 +1213,7 @@ for your Business and Get unlimited Features and many more Features</h2>
     <section class="sec-padding-6 section-medium-dark">
       <div class="container">
         <div class="row">
-          <div class="fo-copyright-holder text-center"> Copyright © 2024 <a href="index.html">NGDOO INITIATIVE</a> | All rights reserved. </div>
+          <div class="fo-copyright-holder text-center"> Copyright © 2024 <a href="index.html">NGODOO INITIATIVE</a> | All rights reserved. </div>
         </div>
       </div>
     </section>
