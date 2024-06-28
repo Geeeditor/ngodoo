@@ -35,7 +35,16 @@ body {
 /* line 22, ../sass/screen.scss */
 .header-section img {
   max-width: 100%;
+  padding-bottom: 10px;
 }
+
+@media screen and (max-width:500px) {
+  .header-section img {
+    max-width: 100%;
+    padding-bottom: 0px;
+  }
+}
+
 /* line 25, ../sass/screen.scss */
 .header-section .container {
   max-width: 1316px;
