@@ -56,14 +56,14 @@ const headerContent = `
                       
                       <li class="right "> <a href="">About US</a> <span class="arrow"></span>
                         <ul class="dm-align-2">
-                                <li> <a href="#">About Us</a> </li>
+                                <li> <a href="about.html">About Us</a> </li>
                               <li> <a href="board.html">Management </a> </li>
                               
                         </ul>
                       </li>
-                      <li class="right"> <a href="#">Gallery</a> <span class="arrow"></span>
+                      <li class="right"> <a href="gallery.html">Gallery</a> <span class="arrow"></span>
                         <ul class="dm-align-2">
-                              <li> <a href="Gallery.html">Ngodoo Event Gallery</a> </li>
+                              <li> <a href="gallery.html">Ngodoo Event Gallery</a> </li>
                               <!-- <li> <a href="nyc-document-gallery.php">NYC Document Gallery</a> </li> -->
                         </ul>
                       </li>
