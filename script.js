@@ -54,7 +54,7 @@ const headerContent = `
                         </ul>-->
                       </li>
                       
-                      <li class="right active"> <a href="">About US</a> <span class="arrow"></span>
+                      <li class="right "> <a href="">About US</a> <span class="arrow"></span>
                         <ul class="dm-align-2">
                                 <li> <a href="#">About Us</a> </li>
                               <li> <a href="board.html">Management </a> </li>
@@ -92,7 +92,7 @@ const footerContent = `
             <div class="fo-map">
               <!-- <div class="footer-logo"><img height="80" src="images/ccc.png" alt=""/></div> -->
               <h4 class="text-white less-mar3 font-weight-5">Ngodoo Development Initiative</h4>
-              <p class="text-light">At Ngodoo Development Initiative, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environment, Gender inclusion, Human Health, Good Governance and Gender Inclusion </p>
+              <p class="text-light">At NDI, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environment, Gender inclusion, Human Health, Good Governance and Gender Inclusion </p>
             </div>
           </div>
           <!--end item-->

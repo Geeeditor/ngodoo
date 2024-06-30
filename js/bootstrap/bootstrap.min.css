@@ -1417,6 +1417,7 @@ ol,
 ul {
   margin-top: 0;
   margin-bottom: 10px;
+  list-style: disc;
 }
 ol ol,
 ol ul,
