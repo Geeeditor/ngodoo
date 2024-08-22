@@ -92,7 +92,7 @@ const footerContent = `
             <div class="fo-map">
               <!-- <div class="footer-logo"><img height="80" src="images/ccc.png" alt=""/></div> -->
               <h4 class="text-white less-mar3 font-weight-5">Ngodoo Development Initiative</h4>
-              <p class="text-light">At NDI, we aim to ensure a more equitable, sustainable future where women, children, and youth are respected through sustainable socio-political, economic, and environmental development. We address critical global challenges via Education, Environment, Gender inclusion, Human Health, Good Governance and Gender Inclusion </p>
+            
             </div>
           </div>
           <!--end item-->
